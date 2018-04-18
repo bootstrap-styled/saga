@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Provider from 'react-redux/lib/components/Provider';
 import PropTypes from 'prop-types';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import reducer from '../../src/components/reducer';
 
 export default class Wrapper extends Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = {
@@ -27,7 +26,7 @@ export default class Wrapper extends Component { // eslint-disable-line react/pr
       // other store enhancers if any
     );
 
-    const store = createStore(combineReducers({ 'bs.demo': reducer }), enhancer);
+    const store = createStore(combineReducers({/* empty */}), enhancer);
     this.setState({
       store,
     });

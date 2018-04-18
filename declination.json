@@ -4,13 +4,15 @@
     "react-dom": "ReactDom",
     "redux": "redux",
     "react-redux": "react-redux",
-    "redux-saga": "redux-saga"
+    "redux-saga": "redux-saga",
+    "bootstrap-styled-redux": "bootstrap-styled-redux"
   },
   "external": [
     "react",
     "react-dom",
     "redux",
     "react-redux",
-    "redux-saga"
+    "redux-saga",
+    "bootstrap-styled-redux"
   ]
 }
