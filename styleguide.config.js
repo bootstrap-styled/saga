@@ -1,7 +1,9 @@
 const webpack = require('webpack');
 const path = require('path');
 const pkg = require('./package.json');
+const MiniHtmlWebpackPlugin = require('mini-html-webpack-plugin');
 const config = require('./styleguide/styleguide.config.json');
+const { generateCSSReferences, generateJSReferences } = MiniHtmlWebpackPlugin;
 
 module.exports = {
   styleguideDir: 'public',
@@ -11,7 +13,23 @@ module.exports = {
   showUsage: true,
   showSidebar: true,
   styles: {},
-  template: path.join(__dirname, 'styleguide/template.html'),
+  template: ({
+    css,
+    js,
+    title,
+    publicPath,
+  }) => `<!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>${title}</title>
+        ${generateCSSReferences(css, publicPath)}
+      </head>
+      <body>
+        <div id="app"></div>
+        ${generateJSReferences(js, publicPath)}
+      </body>
+    </html>`,
   theme: {},
   title: `${pkg.description || pkg.name} documentation`,
   verbose: false,
@@ -24,6 +42,11 @@ module.exports = {
         ],
       }),
     ],
+    resolve: {
+      alias: {
+        'bootstrap-styled-saga': path.resolve(__dirname),
+      },
+    },
     module: {
       rules: [
         // Babel loader, will use your project’s .babelrc
