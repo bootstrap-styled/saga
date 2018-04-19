@@ -1,6 +1,6 @@
 import { makeTheme } from 'bootstrap-styled';
-import { changeThemeSuccess, changeThemeFailure } from '../actions';
-import { CHANGE_THEME_SUCCESS, CHANGE_THEME_FAILURE } from '../constants';
+import { changeThemeRequest, changeThemeSuccess, changeThemeFailure, deleteAsyncThemes } from '../actions';
+import { CHANGE_THEME_REQUEST, CHANGE_THEME_SUCCESS, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES } from '../constants';
 
 
 describe('bootstrap-styled-saga actions', () => {
@@ -8,6 +8,15 @@ describe('bootstrap-styled-saga actions', () => {
   beforeAll(() => {
     theme = makeTheme({
       '$brand-primary': 'red',
+    });
+  });
+
+  describe('changeThemeRequest', () => {
+    it('should dispatch changeThemeRequest', () => {
+      expect(changeThemeRequest('someid')).toEqual({
+        type: CHANGE_THEME_REQUEST,
+        name: 'someid',
+      });
     });
   });
 
@@ -27,6 +36,14 @@ describe('bootstrap-styled-saga actions', () => {
         type: CHANGE_THEME_FAILURE,
         error,
         current: theme._name, // eslint-disable-line no-underscore-dangle
+      });
+    });
+  });
+
+  describe('deleteAsyncThemes', () => {
+    it('should dispatch deleteAsyncThemes', () => {
+      expect(deleteAsyncThemes()).toEqual({
+        type: DELETE_ASYNC_THEMES,
       });
     });
   });
