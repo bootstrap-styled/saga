@@ -1,0 +1,19 @@
+We have made from the [Configuration](#configuration) a live demo.
+
+```js
+const { Button, Form } = require('bootstrap-styled/lib');
+<React.Fragment>
+  <Form className="pb-2">
+    <AsyncThemeToggle />
+  </Form>
+  <div>
+    <Button color="primary">primary</Button>
+    <Button color="secondary">secondary</Button>
+    <Button color="success">success</Button>
+    <Button color="info">info</Button>
+    <Button color="warning">warning</Button>
+    <Button color="danger">danger</Button>
+    <Button color="link">link</Button>
+  </div>
+</React.Fragment>
+```

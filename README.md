@@ -1,6 +1,6 @@
 # bootstrap-styled-saga
 
-bootstrap-styled-saga npm package.
+bootstrap-styled-saga will help you fetch theme to your bootstrap-styled-redux `ConnectedBootstrapProvider`.
 
 **Master**
 
