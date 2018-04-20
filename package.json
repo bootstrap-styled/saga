@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-styled-saga",
-  "version": "0.0.1",
-  "description": "bootstrap-styled-saga",
+  "version": "0.1.0",
+  "description": "bootstrap-styled-saga will help you fetch theme to your bootstrap-styled-redux ConnectedBootstrapProvider",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-saga.es.js",
   "module": "dist/bootstrap-styled-saga.es.js",
@@ -43,20 +43,23 @@
     "url": "https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-saga/issues"
   },
   "files": [
-    "CODE_OF_CONDUCT.md",
     "LICENSE.md",
     "dist",
-    "internals",
     "lib",
     "bin"
   ],
   "keywords": [
-    ""
+    "styled",
+    "bootstrap-styled",
+    "styled-components",
+    "react",
+    "bootstrap",
+    "bootstrap-styled-redux"
   ],
   "authors": [
     "Dimitri Kopriwa <dimitri.kopriwa@yeutech.com>"
   ],
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb",
@@ -159,7 +162,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "bootstrap-styled": "^1.6.2",
-    "bootstrap-styled-redux": "^0.0.10",
+    "bootstrap-styled-redux": "^0.1.0",
     "ci-publish": "^1.3.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -217,7 +220,7 @@
   "dependencies": {
     "async": "^2.6.0",
     "babel-core": "^6.26.0",
-    "bootstrap-styled-toggle": "0.0.5",
+    "bootstrap-styled-toggle": "^0.1.0",
     "classnames": "^2.2.5",
     "directory-tree": "^2.0.0",
     "git-cli-upgrade-tool": "^0.0.9",
@@ -236,7 +239,7 @@
     "redux": "^4.0.0",
     "react-redux": "^5.0.7",
     "redux-saga": "^0.16.0",
-    "bootstrap-styled-redux": "^0.0.10"
+    "bootstrap-styled-redux": "^0.1.0"
   },
   "jest": {
     "roots": [
