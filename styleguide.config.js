@@ -23,7 +23,6 @@ module.exports = {
       <head>
         <meta charset="UTF-8">
         <title>${title}</title>
-        ${generateCSSReferences(css, publicPath)}
           <style>
           /* http://meyerweb.com/eric/tools/css/reset/ 
              v2.0 | 20110126
@@ -88,6 +87,7 @@ module.exports = {
             filter: drop-shadow(2px 2px 1px #cebebe);
           }
           </style>
+          ${generateCSSReferences(css, publicPath)}
       </head>
       <body>
         <div id="rsg-root">
@@ -164,6 +164,11 @@ module.exports = {
   styleguideComponents: {
     StyleGuideRenderer: path.join(__dirname, 'styleguide/components/LayoutRenderer'),
     Wrapper: path.join(__dirname, 'styleguide/components/Wrapper'),
+  },
+  getComponentPathLine(componentPath) {
+    const name = path.basename(componentPath, '.js');
+    const dir = path.dirname(componentPath);
+    return `import ${name} from '${dir.replace(/^src\//, 'lib/')}';`;
   },
   ...config,
 };
