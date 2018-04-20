@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-saga",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "bootstrap-styled-saga",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-saga.es.js",
