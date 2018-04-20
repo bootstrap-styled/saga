@@ -1,10 +1,11 @@
 This toggle demonstrate how you can use use merged values from the unsync `themes` and sync `themes`.
  
 ```js
-const { default: Button } = require('bootstrap-styled/lib/Button');
-const { default: ConnectedBootstrapProvider } = require('bootstrap-styled-redux/lib/components/ConnectedBootstrapProvider');
-<ConnectedBootstrapProvider injectGlobal={false}>
-  <GroupedThemeToggle />
+const { Button, Form } = require('bootstrap-styled/lib');
+<React.Fragment>
+  <Form className="pb-2">
+    <AllThemeToggle />
+  </Form>
   <div>
     <Button color="primary">primary</Button>
     <Button color="secondary">secondary</Button>
@@ -14,5 +15,5 @@ const { default: ConnectedBootstrapProvider } = require('bootstrap-styled-redux/
     <Button color="danger">danger</Button>
     <Button color="link">link</Button>
   </div>
-</ConnectedBootstrapProvider>
+</React.Fragment>
 ```

@@ -2008,9 +2008,9 @@
       }
     },
     "bootstrap-styled-redux": {
-      "version": "0.0.7",
-      "resolved": "https://registry.npmjs.org/bootstrap-styled-redux/-/bootstrap-styled-redux-0.0.7.tgz",
-      "integrity": "sha512-TU0xh8ZtgatPIfkiDUDsQEpHl+zZDBKBCQkD8PrYbEU9WDyzDUtbDw9m4Z7+IrhiMXLZCNcdCsZzfh+UMTcu7g==",
+      "version": "0.0.10",
+      "resolved": "https://registry.npmjs.org/bootstrap-styled-redux/-/bootstrap-styled-redux-0.0.10.tgz",
+      "integrity": "sha512-V7brYy09wA1x894xGm+9+iYiLintANTnB1oftAQx5vpMyL/ZoOSqzrAGiFQ2nyee9pj7kJIxP/c2jObx+bi3Jg==",
       "dev": true,
       "requires": {
         "async": "2.6.0",
@@ -2029,31 +2029,6 @@
         "rimraf": "2.6.2",
         "shelljs": "0.8.1",
         "yargs": "11.0.0"
-      },
-      "dependencies": {
-        "bootstrap-styled-toggle": {
-          "version": "0.0.5",
-          "resolved": "https://registry.npmjs.org/bootstrap-styled-toggle/-/bootstrap-styled-toggle-0.0.5.tgz",
-          "integrity": "sha512-UuqP/c0y3iNVkjnqKUiL6rRxEi7CKscZj5qZcKiejOqDGXDtjoomjQ5He+eQYoIn41QGJKbh1ecEP4YhrT0mIw==",
-          "dev": true,
-          "requires": {
-            "async": "2.6.0",
-            "babel-core": "6.26.0",
-            "bootstrap-styled": "1.6.2",
-            "classnames": "2.2.5",
-            "directory-tree": "2.1.0",
-            "git-cli-upgrade-tool": "0.0.9",
-            "glob": "7.1.2",
-            "kopaxgroup-cli-helpers": "0.0.3",
-            "node-map-directory": "0.1.0",
-            "prop-types": "15.6.1",
-            "react-transition-group": "2.3.1",
-            "reselect": "3.0.1",
-            "rimraf": "2.6.2",
-            "shelljs": "0.8.1",
-            "yargs": "11.0.0"
-          }
-        }
       }
     },
     "bootstrap-styled-toggle": {

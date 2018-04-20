@@ -1,8 +1,11 @@
+We have made from the [Configuration](#configuration) a live demo.
+
 ```js
-const { default: Button } = require('bootstrap-styled/lib/Button');
-const { default: ConnectedBootstrapProvider } = require('bootstrap-styled-redux/lib/components/ConnectedBootstrapProvider');
-<ConnectedBootstrapProvider injectGlobal={false}>
-  <AsyncThemeToggle />
+const { Button, Form } = require('bootstrap-styled/lib');
+<React.Fragment>
+  <Form className="pb-2">
+    <AsyncThemeToggle />
+  </Form>
   <div>
     <Button color="primary">primary</Button>
     <Button color="secondary">secondary</Button>
@@ -12,5 +15,5 @@ const { default: ConnectedBootstrapProvider } = require('bootstrap-styled-redux/
     <Button color="danger">danger</Button>
     <Button color="link">link</Button>
   </div>
-</ConnectedBootstrapProvider>
+</React.Fragment>
 ```

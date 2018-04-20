@@ -21,6 +21,10 @@
       "content": "docs/configuration.md"
     },
     {
+      "name": "Actions",
+      "content": "docs/actions.md"
+    },
+    {
       "name": "UI Components",
       "content": "docs/ui.md",
       "components": "src/components/**/*.js"

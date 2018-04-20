@@ -1,4 +1,7 @@
-import { CHANGE_THEME_REQUEST, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES, STORE_ASYNC_THEME } from './constants';
+You can import and use the following actions to interact with the store. 
+
+```js static
+import { CHANGE_THEME_REQUEST, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES, STORE_ASYNC_THEME } from 'bootstrap-styled-saga/lib/constants';
 
 /**
  * trigger to use change async theme
@@ -34,3 +37,4 @@ export const storeAsyncTheme = (theme) => ({
 export const deleteAsyncThemes = () => ({
   type: DELETE_ASYNC_THEMES,
 });
+```
