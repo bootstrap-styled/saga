@@ -1,16 +1,9 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import Toggle from 'bootstrap-styled-toggle/lib/components/Toggle';
 import { createStructuredSelector } from 'reselect';
-import { changeTheme as changeThemeAction } from 'bootstrap-styled-redux/lib/actions';
 import { selectValue } from 'bootstrap-styled-redux/lib/selectors';
 import { selectAsyncValues } from '../../selectors';
-
-/**
- * AsyncThemeToggle is used to display a select option to change async theme
- * @constructor
- */
-export const AsyncThemeToggle = (props) => <Toggle {...props} />;
+import { changeThemeRequest as changeThemeRequestAction } from '../../actions';
 
 const mapStateToProps = createStructuredSelector({
   value: selectValue,
@@ -18,7 +11,11 @@ const mapStateToProps = createStructuredSelector({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  onToggle: (evt) => dispatch(changeThemeAction(evt.target.value)),
+  onToggle: (evt) => dispatch(changeThemeRequestAction(evt.target.value)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(AsyncThemeToggle);
+/**
+ * AsyncThemeToggle is used to display a select option to change async theme
+ * @constructor
+ */
+export default connect(mapStateToProps, mapDispatchToProps)(Toggle);

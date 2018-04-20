@@ -1,5 +1,8 @@
 import asyncThemeReducer, { initialState } from '../asyncThemeReducer';
-import { changeThemeSuccess as changeThemeSuccessAction } from '../../actions';
+import {
+  deleteAsyncThemes as deleteAsyncThemesAction,
+  storeAsyncTheme as storeAsyncThemeAction,
+} from '../../actions';
 
 describe('asyncThemeReducer', () => {
   let state;
@@ -15,7 +18,14 @@ describe('asyncThemeReducer', () => {
     expect(asyncThemeReducer(undefined, {})).toEqual(expectedResult);
   });
 
-  it('should handle the storeTheme action correctly', () => {
+  it('should handle the deleteAsyncThemes action correctly', () => {
+    expectedResult = {
+      themes: {},
+    };
+    expect(asyncThemeReducer(state, deleteAsyncThemesAction())).toEqual(expectedResult);
+  });
+
+  it('should handle the storeAsyncTheme action correctly', () => {
     const theme = {
       _name: 'test',
       $white: '#eee',
@@ -25,6 +35,6 @@ describe('asyncThemeReducer', () => {
         [theme._name]: theme, // eslint-disable-line no-underscore-dangle
       },
     };
-    expect(asyncThemeReducer(state, changeThemeSuccessAction(theme))).toEqual(expectedResult);
+    expect(asyncThemeReducer(state, storeAsyncThemeAction(theme))).toEqual(expectedResult);
   });
 });

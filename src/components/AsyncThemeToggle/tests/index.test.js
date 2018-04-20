@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import { createStore } from 'redux';
 import theme from 'bootstrap-styled/lib/theme';
-import { changeTheme as changeThemeAction } from 'bootstrap-styled-redux/lib/actions';
+import { changeThemeRequest as changeThemeRequestAction } from '../../../actions';
 import reducer from '../../../reducer';
 import AsyncThemeToggle, { mapDispatchToProps } from '../index';
 
@@ -36,7 +36,7 @@ describe('<AsyncThemeToggle />', () => {
         const result = mapDispatchToProps(dispatch);
         const evt = { target: { value: theme } };
         result.onToggle(evt);
-        expect(dispatch).toHaveBeenCalledWith(changeThemeAction(theme));
+        expect(dispatch).toHaveBeenCalledWith(changeThemeRequestAction(theme));
       });
     });
   });

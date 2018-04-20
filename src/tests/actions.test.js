@@ -1,6 +1,6 @@
 import { makeTheme } from 'bootstrap-styled';
-import { changeThemeRequest, changeThemeSuccess, changeThemeFailure, deleteAsyncThemes } from '../actions';
-import { CHANGE_THEME_REQUEST, CHANGE_THEME_SUCCESS, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES } from '../constants';
+import { changeThemeRequest, changeThemeFailure, deleteAsyncThemes, storeAsyncTheme } from '../actions';
+import { CHANGE_THEME_REQUEST, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES, STORE_ASYNC_THEME } from '../constants';
 
 
 describe('bootstrap-styled-saga actions', () => {
@@ -20,15 +20,6 @@ describe('bootstrap-styled-saga actions', () => {
     });
   });
 
-  describe('changeThemeSuccess', () => {
-    it('should dispatch changeThemeSuccess', () => {
-      expect(changeThemeSuccess(theme)).toEqual({
-        type: CHANGE_THEME_SUCCESS,
-        theme,
-      });
-    });
-  });
-
   describe('changeThemeFailure', () => {
     it('should dispatch changeThemeFailure', () => {
       const error = new Error('failure');
@@ -44,6 +35,15 @@ describe('bootstrap-styled-saga actions', () => {
     it('should dispatch deleteAsyncThemes', () => {
       expect(deleteAsyncThemes()).toEqual({
         type: DELETE_ASYNC_THEMES,
+      });
+    });
+  });
+
+  describe('storeAsyncTheme', () => {
+    it('should dispatch storeAsyncTheme', () => {
+      expect(storeAsyncTheme(theme)).toEqual({
+        type: STORE_ASYNC_THEME,
+        theme,
       });
     });
   });
