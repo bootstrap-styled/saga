@@ -1,4 +1,10 @@
 {
+  "ignore": [
+    "**/__tests__/**",
+    "**/*.test.{js,jsx,ts,tsx}",
+    "**/*.spec.{js,jsx,ts,tsx}",
+    "**/*.d.ts"
+  ],
   "sections": [
     {
       "name": "Introduction",
@@ -19,6 +25,10 @@
     {
       "name": "Configuration",
       "content": "docs/configuration.md"
+    },
+    {
+      "name": "Actions",
+      "content": "docs/actions.md"
     },
     {
       "name": "UI Components",
@@ -46,10 +56,6 @@
           "content": "docs/release.md"
         }
       ]
-    },
-    {
-      "name": "Local CLI",
-      "content": "docs/local-cli.md"
     }
   ]
 }
