@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-styled-saga",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "bootstrap-styled-saga will help you fetch theme to your bootstrap-styled-redux ConnectedBootstrapProvider",
   "main": "lib/index.js",
   "jsnext:main": "dist/bootstrap-styled-saga.es.js",
