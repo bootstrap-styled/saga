@@ -190,6 +190,7 @@
     "react-transition-group": "^2.2.1",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0",
+    "request": "^2.87.0",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-cleanup": "^2.0.0",
@@ -219,7 +220,7 @@
     "lint-staged"
   ],
   "dependencies": {
-    "bootstrap-styled-toggle": "^1.0.0",
+    "bootstrap-styled-toggle": "^1.0.1",
     "prop-types": "^15.6.1",
     "reselect": "^3.0.1"
   },
