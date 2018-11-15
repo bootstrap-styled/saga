@@ -1,5 +1,5 @@
 import { all, call, put, takeLatest } from 'redux-saga/effects';
-import { changeTheme } from 'bootstrap-styled-redux/lib/actions';
+import { changeTheme } from '@bootstrap-styled/redux/lib/actions';
 import { CHANGE_THEME_REQUEST } from './constants';
 import { changeThemeFailure, storeAsyncTheme } from './actions';
 

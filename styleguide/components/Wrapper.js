@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Provider from 'react-redux/lib/components/Provider';
 import PropTypes from 'prop-types';
 import { createStore, applyMiddleware, compose } from 'redux';
-import ConnectedBootstrapProvider from 'bootstrap-styled-redux/lib/components/ConnectedBootstrapProvider';
+import ConnectedBootstrapProvider from '@bootstrap-styled/redux/lib/components/ConnectedBootstrapProvider';
 import createSagaMiddleware from 'redux-saga';
 import bootstrapStyledTheme, { makeTheme } from 'bootstrap-styled/lib/theme';
 import makeBootstrapStyledSaga from '../../src/saga';

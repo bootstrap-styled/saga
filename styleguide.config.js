@@ -1,5 +1,5 @@
 const path = require('path');
-const { config } = require('@yeutech/rollup-documentation/lib/styleguide.config.js');
+const { config } = require('@yeutech-lab/rollup-umd-documentation/lib/styleguide.config.js');
 
 module.exports = {
   ...config,

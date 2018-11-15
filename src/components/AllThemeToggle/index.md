@@ -1,7 +1,7 @@
 This toggle demonstrate how you can use use merged values from the unsync `themes` and sync `themes`.
  
 ```js
-const { Button, Form } = require('bootstrap-styled/lib');
+const { Button, Form } = require('@bootstrap-styled/v4/lib');
 <React.Fragment>
   <Form className="pb-2">
     <AllThemeToggle />

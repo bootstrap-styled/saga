@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import { createStore } from 'redux';
 import theme, { makeTheme } from 'bootstrap-styled/lib/theme';
-import { changeTheme as changeThemeAction } from 'bootstrap-styled-redux/lib/actions';
+import { changeTheme as changeThemeAction } from '@bootstrap-styled/redux/lib/actions';
 import reducer from '../../../reducer';
 import { changeThemeRequest as changeThemeRequestAction } from '../../../actions';
 
