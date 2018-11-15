@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import themeReducer from 'bootstrap-styled-redux/lib/reducer/themeReducer';
+import themeReducer from '@bootstrap-styled/redux/lib/reducer/themeReducer';
 import asyncThemeReducer from './asyncThemeReducer';
 
 const bsSagaReducer = combineReducers({

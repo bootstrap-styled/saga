@@ -1,10 +1,10 @@
 {
-  "name": "bootstrap-styled-saga",
+  "name": "@bootstrap-styled/saga",
   "version": "0.0.0-development",
-  "description": "bootstrap-styled-saga will help you fetch theme to your bootstrap-styled-redux ConnectedBootstrapProvider",
+  "description": "@bootstrap-styled/saga will help you fetch theme to your bootstrap-styled-redux ConnectedBootstrapProvider",
   "main": "lib/index.js",
-  "jsnext:main": "dist/bootstrap-styled-saga.es.js",
-  "module": "dist/bootstrap-styled-saga.es.js",
+  "jsnext:main": "dist/@bootstrap-styled/saga.es.js",
+  "module": "dist/@bootstrap-styled/saga.es.js",
   "homepage": "https://bootstrap-styled.yeutech.com/bootstrap-styled-saga",
   "browserslist": [
     "IE >= 9",
@@ -48,6 +48,7 @@
     "bootstrap-styled",
     "styled-components",
     "react",
+    "saga",
     "bootstrap",
     "bootstrap-styled-redux"
   ],
@@ -136,12 +137,12 @@
     ]
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^2.0.2",
-    "@semantic-release/exec": "^2.2.4",
-    "@semantic-release/git": "^5.0.0",
+    "@semantic-release/changelog": "^3.0.0",
+    "@semantic-release/exec": "^2.3.0",
+    "@semantic-release/git": "^7.0.0",
     "@semantic-release/gitlab": "^2.1.4",
-    "@semantic-release/npm": "^3.3.1",
-    "@yeutech/rollup-documentation": "^2.3.0",
+    "@semantic-release/npm": "^4.0.0",
+    "@yeutech-lab/rollup-umd-documentation": "^2.4.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -164,8 +165,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "bootstrap-styled": "^1.6.5",
-    "bootstrap-styled-redux": "^0.1.2",
+    "bootstrap-styled": "^1.0.3",
+    "@bootstrap-styled/redux": "^1.0.5",
     "cz-conventional-changelog": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -183,12 +184,12 @@
     "lint-staged": "^4.1.3",
     "pre-commit": "^1.2.2",
     "raf": "^3.4.0",
-    "react": "^16.3.2",
-    "react-redux": "^5.0.7",
-    "react-styleguidist": "^7.0.9",
+    "react": "^16.6.3",
+    "react-redux": "^5.1.1",
+    "react-styleguidist": "^8.0.4",
     "react-test-renderer": "^16.3.2",
     "react-transition-group": "^2.2.1",
-    "redux": "^4.0.0",
+    "redux": "^4.0.1",
     "redux-saga": "^0.16.0",
     "request": "^2.87.0",
     "rollup": "^0.57.1",
@@ -203,11 +204,11 @@
     "rollup-plugin-uglify": "^3.0.0",
     "rollup-plugin-visualizer": "^0.5.0",
     "rollup-watch": "^4.3.1",
-    "semantic-release": "^15.5.2",
+    "semantic-release": "^15.8.0",
     "sinon": "^2.3.2",
-    "styled-components": "^3.3.2",
-    "toctoc": "^0.3.0",
-    "webpack": "^4.6.0"
+    "styled-components": "^4.1.1",
+    "toctoc": "^0.3.2",
+    "webpack": "^4.16.1"
   },
   "lint-staged": {
     "*.js": [
@@ -220,19 +221,20 @@
     "lint-staged"
   ],
   "dependencies": {
-    "bootstrap-styled-toggle": "^1.0.2",
+    "@bootstrap-styled/toggle": "^1.0.7",
     "prop-types": "^15.6.1",
     "reselect": "^3.0.1"
   },
   "peerDependencies": {
-    "react": "^16.3.2",
-    "redux": "^4.0.0",
-    "react-redux": "^5.0.7",
+    "react": "^16.6.3",
+    "redux": "^4.0.1",
+    "react-redux": "^5.1.1",
     "redux-saga": "^0.16.0",
-    "styled-components": "^3.3.2",
-    "bootstrap-styled-redux": "^0.1.2"
+    "styled-components": "^4.1.1",
+    "@bootstrap-styled/redux": "^1.0.5"
   },
   "jest": {
+    "testURL": "http://localhost",
     "roots": [
       "<rootDir>/src/"
     ],
@@ -263,11 +265,10 @@
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/internals/testing/test-bundler.js"
   },
-  "author": "Yeutech Company Limited <contact@yeutech.com>",
-  "private": false,
+  "author": "Dimitri Kopriwa <dimitri.kopriwa@yeutech.vn>",
   "publishConfig": {
-    "tag": "latest",
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://npm.kopaxgroup.com",
+    "tag": "latest"
   },
   "release": {
     "branch": "master",
@@ -275,6 +276,10 @@
     "fail": false,
     "npmPublish": true,
     "verifyConditions": [
+      {
+        "path": "@semantic-release/exec",
+        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive verify"
+      },
       "@semantic-release/changelog",
       "@semantic-release/npm",
       "@semantic-release/git",
@@ -284,14 +289,17 @@
       }
     ],
     "prepare": [
+      {
+        "path": "@semantic-release/exec",
+        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive prepare"
+      },
       "@semantic-release/changelog",
       "@semantic-release/npm",
       {
         "path": "@semantic-release/git",
         "assets": [
           "package.json",
-          "dist/**/*.{js|es}",
-          "lib/**/*.js",
+          "src/**/*.js",
           "CHANGELOG.md",
           "README.md",
           "LICENSE.md"
@@ -302,7 +310,7 @@
       "@semantic-release/npm",
       {
         "path": "@semantic-release/exec",
-        "cmd": "echo ${nextRelease.version} > ~/release_version"
+        "cmd": "npx @yeutech/rollup-umd-ci-release-transitive publish ${nextRelease.version}"
       },
       {
         "path": "@semantic-release/gitlab",
@@ -313,6 +321,25 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "transitive": {
+    "name": "saga",
+    "scope": "bootstrap-styled",
+    "scopedName": "@bootstrap-styled/saga",
+    "jsnext:main": "dist/@bootstrap-styled/saga.es.js",
+    "module": "dist/@bootstrap-styled/saga.es.js",
+    "homepage": "https://bootstrap-styled.github.io/saga",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bootstrap-styled/saga.git"
+    },
+    "bugs": {
+      "url": "https://github.com/bootstrap-styled/saga/issues"
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org"
     }
   }
 }

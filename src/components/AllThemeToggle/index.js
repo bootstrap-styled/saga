@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import Toggle from 'bootstrap-styled-toggle/lib/components/Toggle';
+import Toggle from '@bootstrap-styled/toggle/lib/components/Toggle';
 import { createStructuredSelector } from 'reselect';
-import { changeTheme as changeThemeAction } from 'bootstrap-styled-redux/lib/actions';
-import { selectValue } from 'bootstrap-styled-redux/lib/selectors';
+import { changeTheme as changeThemeAction } from '@bootstrap-styled/redux/lib/actions';
+import { selectValue } from '@bootstrap-styled/redux/lib/selectors';
 import { selectGroupedValues, selectAsyncThemes } from '../../selectors';
 import { changeThemeRequest as changeThemeRequestAction } from '../../actions';
 

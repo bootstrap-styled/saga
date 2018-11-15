@@ -1,7 +1,7 @@
 We have made from the [Configuration](#configuration) a live demo.
 
 ```js
-const { Button, Form } = require('bootstrap-styled/lib');
+const { Button, Form } = require('@bootstrap-styled/v4/lib');
 <React.Fragment>
   <Form className="pb-2">
     <AsyncThemeToggle />

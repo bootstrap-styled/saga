@@ -73,7 +73,7 @@ describe('selectBsSaga', () => {
         },
       };
       it('should select the async themes', () => {
-        expect(selectGroupedValues(doubleState)).toEqual(['copy', theme._name]); // eslint-disable-line no-underscore-dangle
+        expect(selectGroupedValues(doubleState)).toEqual(['copy', new String(theme._name)]); // eslint-disable-line no-underscore-dangle, no-new-wrappers
       });
     });
   });

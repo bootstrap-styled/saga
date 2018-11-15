@@ -6,14 +6,14 @@ import Provider from 'react-redux/lib/components/Provider';
 import PropTypes from 'prop-types';
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import ConnectedBootstrapProvider from 'bootstrap-styled-redux/lib/components/ConnectedBootstrapProvider';
-import bsReduxSaga from 'bootstrap-styled-redux-saga/lib';
+import ConnectedBootstrapProvider from '@bootstrap-styled/redux/lib/components/ConnectedBootstrapProvider';
+import bsReduxSaga from '@bootstrap-styled/saga/lib/saga';
 
 // use the combinedReducers if you don't have any from your app
-import combinedReducers from 'bootstrap-styled-redux/lib/reducer'; 
+import combinedReducers from '@bootstrap-styled/redux/lib/reducer'; 
 
  // or import our asyncThemeReducer and combine it your self
-// import asyncThemeReducer from 'bootstrap-styled-redux/lib/asyncThemeReducer';
+// import asyncThemeReducer from '@bootstrap-styled/redux/lib/asyncThemeReducer';
 
 // you provide this
 import themeProvider, { theme } from './themeProvider';

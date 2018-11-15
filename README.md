@@ -1,6 +1,6 @@
-# bootstrap-styled-saga
+# @bootstrap-styled/saga
 
-bootstrap-styled-saga will help you fetch theme to your bootstrap-styled-redux `ConnectedBootstrapProvider`.
+@bootstrap-styled/saga will help you fetch theme to your bootstrap-styled-redux `ConnectedBootstrapProvider`.
 
 **Master**
 
@@ -22,7 +22,7 @@ bootstrap-styled-saga will help you fetch theme to your bootstrap-styled-redux `
   
 ## Documentation
 
-  - View bootstrap-styled-saga [HTML documentation](https://bootstrap-styled.yeutech.com/bootstrap-styled-saga)
+  - View @bootstrap-styled/saga [HTML documentation](https://bootstrap-styled.yeutech.com/bootstrap-styled-saga)
   - View rollup-umd [HTML documentation](https://dev-tools.yeutech.com/rollup-umd) *(require access)*
 
 ## License
