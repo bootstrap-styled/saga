@@ -1,3 +1,10 @@
+## [1.0.2](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-saga/compare/v1.0.1...v1.0.2) (2018-11-15)
+
+
+### Bug Fixes
+
+* **publish:** set to public ([6d2ba9b](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-saga/commit/6d2ba9b))
+
 ## [1.0.1](https://module.kopaxgroup.com/bootstrap-styled/bootstrap-styled-saga/compare/v1.0.0...v1.0.1) (2018-06-15)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/saga",
-  "version": "0.0.0-development",
+  "version": "1.0.2",
   "description": "Bootstrap Styled saga will help you fetch theme to your bootstrap-styled-redux ConnectedBootstrapProvider",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/saga.es.js",
@@ -29,7 +29,8 @@
     "prepublish": "npm run build",
     "lint-staged": "lint-staged",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@bootstrap-styled/saga is deprecated, use @bootstrap-styled/saga instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",
