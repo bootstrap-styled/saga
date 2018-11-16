@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/bootstrap-styled/saga/compare/v1.0.4...v1.0.5) (2018-11-16)
+
+
+### Bug Fixes
+
+* **doc:** added babel-polyfill to allow regenerator saga ([8dc72cd](https://github.com/bootstrap-styled/saga/commit/8dc72cd))
+
 ## [1.0.4](https://github.com/bootstrap-styled/saga/compare/v1.0.3...v1.0.4) (2018-11-15)
 
 
