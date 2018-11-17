@@ -142,7 +142,7 @@
     "@semantic-release/git": "^7.0.5",
     "@semantic-release/github": "^5.2.1",
     "@semantic-release/npm": "^4.0.0",
-    "@yeutech-lab/rollup-umd-documentation": "^2.4.4",
+    "@yeutech-lab/rollup-umd-documentation": "^2.4.5",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
@@ -220,7 +220,7 @@
     "lint-staged"
   ],
   "dependencies": {
-    "@bootstrap-styled/toggle": "^1.0.7",
+    "@bootstrap-styled/toggle": "^1.0.10",
     "prop-types": "^15.6.1",
     "reselect": "^3.0.1"
   },
@@ -230,7 +230,7 @@
     "react-redux": "^5.1.1",
     "redux-saga": "^0.16.0",
     "styled-components": "^4.1.1",
-    "@bootstrap-styled/redux": "^1.0.5"
+    "@bootstrap-styled/redux": "^1.0.7"
   },
   "jest": {
     "testURL": "http://localhost",
