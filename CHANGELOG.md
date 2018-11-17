@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/bootstrap-styled/saga/compare/v1.0.5...v1.0.6) (2018-11-17)
+
+
+### Bug Fixes
+
+* **dependencies:** Updated [@bootstrap-styled](https://github.com/bootstrap-styled)/redux to v1.0.7 ([e3b3d3a](https://github.com/bootstrap-styled/saga/commit/e3b3d3a))
+
 ## [1.0.5](https://github.com/bootstrap-styled/saga/compare/v1.0.4...v1.0.5) (2018-11-16)
 
 
