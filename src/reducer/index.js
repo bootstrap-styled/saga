@@ -1,10 +1,25 @@
-import { combineReducers } from 'redux';
-import themeReducer from '@bootstrap-styled/redux/lib/reducer/themeReducer';
-import asyncThemeReducer from './asyncThemeReducer';
+import { STORE_ASYNC_THEME, DELETE_ASYNC_THEMES } from '../constants';
 
-const bsSagaReducer = combineReducers({
-  'bs.redux': themeReducer,
-  'bs.saga': asyncThemeReducer,
-});
+export const initialState = {
+  themes: {},
+};
 
-export default bsSagaReducer;
+/* eslint-disable no-underscore-dangle */
+/**
+ * asyncThemeReducer
+ * @param state
+ * @param action
+ * @returns {*}
+ */
+export default function asyncThemeReducer(state = initialState, action) {
+  switch (action.type) {
+    case STORE_ASYNC_THEME: {
+      return { themes: { ...state.themes, [action.theme._name]: action.theme } };
+    }
+    case DELETE_ASYNC_THEMES: {
+      return { themes: {} };
+    }
+    default:
+      return state;
+  }
+}

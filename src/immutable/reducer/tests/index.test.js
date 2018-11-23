@@ -1,10 +1,11 @@
-import asyncThemeReducer, { initialState } from '../asyncThemeReducer';
+import { fromJS } from 'immutable';
+import asyncThemeReducer, { initialState } from '../index';
 import {
   deleteAsyncThemes as deleteAsyncThemesAction,
   storeAsyncTheme as storeAsyncThemeAction,
-} from '../../actions';
+} from '../../../actions';
 
-describe('asyncThemeReducer', () => {
+describe('asyncThemeReducer immutable', () => {
   let state;
   let expectedResult;
 
@@ -19,9 +20,9 @@ describe('asyncThemeReducer', () => {
   });
 
   it('should handle the deleteAsyncThemes action correctly', () => {
-    expectedResult = {
+    expectedResult = fromJS({
       themes: {},
-    };
+    });
     expect(asyncThemeReducer(state, deleteAsyncThemesAction())).toEqual(expectedResult);
   });
 
@@ -30,11 +31,11 @@ describe('asyncThemeReducer', () => {
       _name: 'test',
       $white: '#eee',
     };
-    expectedResult = {
+    expectedResult = fromJS({
       themes: {
         [theme._name]: theme, // eslint-disable-line no-underscore-dangle
       },
-    };
+    });
     expect(asyncThemeReducer(state, storeAsyncThemeAction(theme))).toEqual(expectedResult);
   });
 });

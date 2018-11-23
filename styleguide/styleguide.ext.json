@@ -32,12 +32,24 @@
     },
     {
       "name": "UI Components",
-      "content": "docs/ui.md",
-      "components": "src/components/**/*.js"
+      "components": [
+        "src/AllThemeToggle/index.js",
+        "src/AsyncThemeToggle/index.js"
+      ]
     },
     {
-      "name": "FAQ",
-      "content": "docs/faq.md"
+      "name": "ImmutableJS",
+      "description": "You can get a reducer and components that work for immutable js stores",
+      "sections": [
+        {
+          "name": "AllThemeToggle",
+          "content": "src/immutable/AllThemeToggle/index.md"
+        },
+        {
+          "name": "AsyncThemeToggle",
+          "content": "src/immutable/AsyncThemeToggle/index.md"
+        }
+      ]
     },
     {
       "name": "Contribute",
@@ -46,10 +58,6 @@
         {
           "name": "Commands",
           "content": "docs/commands.md"
-        },
-        {
-          "name": "Branches",
-          "content": "docs/branches.md"
         },
         {
           "name": "Release",

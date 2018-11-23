@@ -3,8 +3,8 @@ import Toggle from '@bootstrap-styled/toggle/lib/components/Toggle';
 import { createStructuredSelector } from 'reselect';
 import { changeTheme as changeThemeAction } from '@bootstrap-styled/redux/lib/actions';
 import { selectValue } from '@bootstrap-styled/redux/lib/selectors';
-import { selectGroupedValues, selectAsyncThemes } from '../../selectors';
-import { changeThemeRequest as changeThemeRequestAction } from '../../actions';
+import { selectGroupedValues, selectAsyncThemes } from '../selectors';
+import { changeThemeRequest as changeThemeRequestAction } from '../actions';
 
 const mapStateToProps = createStructuredSelector({
   /** we pick the actual value from bootstrap-styled-redux */

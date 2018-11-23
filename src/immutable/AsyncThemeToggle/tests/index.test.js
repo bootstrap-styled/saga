@@ -1,16 +1,23 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import { combineReducers } from 'redux-immutable';
 import { mount } from 'enzyme';
+import reduxReducer from '@bootstrap-styled/redux/lib/immutable/reducer';
 import { createStore } from 'redux';
 import theme from 'bootstrap-styled/lib/theme';
 import { changeThemeRequest as changeThemeRequestAction } from '../../../actions';
-import reducer from '../../../reducer';
+import sagaReducer from '../../reducer';
 import AsyncThemeToggle, { mapDispatchToProps } from '../index';
 
 /* eslint-disable function-paren-newline */
 describe('<AsyncThemeToggle />', () => {
   let store;
+  let reducer;
   beforeAll(() => {
+    reducer = combineReducers({
+      'bs.redux': reduxReducer,
+      'bs.saga': sagaReducer,
+    });
     store = createStore(reducer);
   });
 
