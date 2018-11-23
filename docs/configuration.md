@@ -4,19 +4,20 @@ Start the the saga in your application, for example:
 import React, { Component } from 'react';
 import Provider from 'react-redux/lib/components/Provider';
 import PropTypes from 'prop-types';
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import ConnectedBootstrapProvider from '@bootstrap-styled/redux/lib/components/ConnectedBootstrapProvider';
-import bsReduxSaga from '@bootstrap-styled/saga/lib/saga';
-
-// use the combinedReducers if you don't have any from your app
-import combinedReducers from '@bootstrap-styled/redux/lib/reducer'; 
-
- // or import our asyncThemeReducer and combine it your self
-// import asyncThemeReducer from '@bootstrap-styled/redux/lib/asyncThemeReducer';
+import ConnectedBootstrapProvider from '@bootstrap-styled/redux/lib/ConnectedBootstrapProvider';
+import bsReduxReducer from '@bootstrap-styled/redux/lib/reducer';
+import bsSagaReducer from '$PACKAGE_NAME/lib/reducer';
+import bsReduxSaga from '$PACKAGE_NAME/lib/saga';
 
 // you provide this
 import themeProvider, { theme } from './themeProvider';
+
+const reducers = combineReducers({
+  'bs.redux': bsReduxReducer,
+  'bs.saga': bsSagaReducer,
+});
 
 const sagaMiddleware = createSagaMiddleware();
 const bootstrapStyledSaga = bsReduxSaga(themeProvider, themes);
@@ -36,7 +37,7 @@ const enhancer = composeEnhancers(applyMiddleware(...middleware),
   // other store enhancers if any
 );
 
-const store = createStore(combinedReducers, enhancer);
+const store = createStore(reducers, enhancer);
 sagaMiddleware.run(bootstrapStyledSaga);
 
 function Wrapper(props) {
@@ -57,6 +58,6 @@ const sagaMiddleware = createSagaMiddleware();
 const bootstrapStyledSaga = bsReduxSaga(themeProvider, themes);
 ```
 
-It will provide your `themeProvider` and your availables values to our module.
+It will provide your `themeProvider` and your available values to our module.
 
 `themes` can be an array of `value` used as identifier, or a `themes` object.

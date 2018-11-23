@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/bootstrap-styled/saga.svg?branch=master)](https://travis-ci.org/bootstrap-styled/saga) [![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) [![License](https://img.shields.io/npm/l/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) [![NPM monthly downloads](https://img.shields.io/npm/dm/@bootstrap-styled/saga.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/saga) [![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/saga.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/saga) [![npm Version](https://img.shields.io/node/v/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga)
 
-Bootstrap Styled saga will help you fetch theme to your bootstrap-styled-redux ConnectedBootstrapProvider
+Bootstrap Styled Saga help you pull themes from a server
 
 
 ## Table of Contents
@@ -22,8 +22,8 @@ Read [saga documentation](https://bootstrap-styled.github.io/saga).
 ## Contributors
 
 We are grateful to the contributors for their ideas and collaboration:
-- Dimitri Kopriwa
 
+- Dimitri Kopriwa
 
 ## Contributing
 

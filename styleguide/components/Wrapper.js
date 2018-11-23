@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import Provider from 'react-redux/lib/components/Provider';
 import PropTypes from 'prop-types';
-import { createStore, applyMiddleware, compose } from 'redux';
-import ConnectedBootstrapProvider from '@bootstrap-styled/redux/lib/components/ConnectedBootstrapProvider';
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import ConnectedBootstrapProvider from '@bootstrap-styled/redux/lib/ConnectedBootstrapProvider';
 import createSagaMiddleware from 'redux-saga';
 import bootstrapStyledTheme, { makeTheme } from 'bootstrap-styled/lib/theme';
+import bsReduxReducer from '@bootstrap-styled/redux/lib/reducer';
+import bsSagaReducer from '../../src/reducer';
 import makeBootstrapStyledSaga from '../../src/saga';
-import combinedReducers from '../../src/reducer';
 import themeProvider, { themes } from './tests/themeProvider';
+
+const reducer = combineReducers({
+  'bs.redux': bsReduxReducer,
+  'bs.saga': bsSagaReducer,
+});
 
 export default class Wrapper extends Component { // eslint-disable-line react/prefer-stateless-function
   static propTypes = {
@@ -37,7 +43,7 @@ export default class Wrapper extends Component { // eslint-disable-line react/pr
       // other store enhancers if any
     );
 
-    const store = createStore(combinedReducers, {
+    const store = createStore(reducer, {
       'bs.redux': {
         theme: bootstrapStyledTheme,
         themes: {

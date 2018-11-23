@@ -2,3 +2,10 @@ src
 sonar-project.properties
 .gitlab-ci.yml
 internals
+babel.ext.json
+.babelrc
+babel.config.js
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+styleguide.config.js
+declination.json

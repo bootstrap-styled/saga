@@ -4,11 +4,11 @@ import { mount } from 'enzyme';
 import { createStore } from 'redux';
 import theme, { makeTheme } from 'bootstrap-styled/lib/theme';
 import { changeTheme as changeThemeAction } from '@bootstrap-styled/redux/lib/actions';
-import reducer from '../../../reducer';
-import { changeThemeRequest as changeThemeRequestAction } from '../../../actions';
+import reducer from '../../reducer/index';
+import { changeThemeRequest as changeThemeRequestAction } from '../../actions';
 
 import AsyncThemeToggle, { mapDispatchToProps, mergeProps } from '../index';
-import { themes } from '../../../../styleguide/components/tests/themeProvider';
+import { themes } from '../../../styleguide/components/tests/themeProvider';
 
 /* eslint-disable function-paren-newline, no-underscore-dangle */
 describe('<AsyncThemeToggle />', () => {
