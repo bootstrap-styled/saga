@@ -27,6 +27,10 @@
       "content": "docs/configuration.md"
     },
     {
+      "name": "Server",
+      "content": "docs/server.md"
+    },
+    {
       "name": "Actions",
       "content": "docs/actions.md"
     },
