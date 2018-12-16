@@ -1,7 +1,16 @@
 # saga
 
-[![Build Status](https://travis-ci.org/bootstrap-styled/saga.svg?branch=master)](https://travis-ci.org/bootstrap-styled/saga) [![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) [![License](https://img.shields.io/npm/l/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) [![NPM monthly downloads](https://img.shields.io/npm/dm/@bootstrap-styled/saga.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/saga) [![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/saga.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/saga) [![npm Version](https://img.shields.io/node/v/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga) [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga) [![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/saga.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/bootstrap-styled/saga.svg?branch=master)](https://travis-ci.org/bootstrap-styled/saga) 
+[![npm Version](https://img.shields.io/npm/v/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) 
+[![License](https://img.shields.io/npm/l/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) 
+[![NPM monthly downloads](https://img.shields.io/npm/dm/@bootstrap-styled/saga.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/saga) 
+[![NPM total downloads](https://img.shields.io/npm/dt/@bootstrap-styled/saga.svg?style=flat)](https://npmjs.org/package/@bootstrap-styled/saga) 
+[![npm Version](https://img.shields.io/node/v/@bootstrap-styled/saga.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga) 
+[![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@bootstrap-styled/saga)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga) 
+[![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga)
+[![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled)
+[![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/saga.svg)](https://greenkeeper.io/)
 
 Bootstrap Styled Saga help you pull themes from a server
 
