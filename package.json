@@ -1,6 +1,6 @@
 {
   "name": "@bootstrap-styled/saga",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "bootstrap-styled_saga_ Bootstrap Styled Saga help you pull themes from a server.",
   "main": "lib/index.js",
   "jsnext:main": "dist/@bootstrap-styled/saga.es.js",

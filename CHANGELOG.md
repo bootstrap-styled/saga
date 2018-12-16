@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/bootstrap-styled/saga/compare/v1.1.0...v1.1.1) (2018-12-16)
+
+
+### Performance Improvements
+
+* **greenkeeper:** added greekeeper ([d5413fc](https://github.com/bootstrap-styled/saga/commit/d5413fc))
+
 # [1.1.0](https://github.com/bootstrap-styled/saga/compare/v1.0.6...v1.1.0) (2018-11-23)
 
 
