@@ -22,4 +22,4 @@ docs/
 reports/
 /styleguide
 lib/**/*.md
-src/**/*.md
+
