@@ -1,6 +1,10 @@
 import { makeTheme } from 'bootstrap-styled';
-import { changeThemeRequest, changeThemeFailure, deleteAsyncThemes, storeAsyncTheme } from '../actions';
-import { CHANGE_THEME_REQUEST, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES, STORE_ASYNC_THEME } from '../constants';
+import {
+  changeThemeRequest, changeThemeFailure, deleteAsyncThemes, storeAsyncTheme,
+} from '../actions';
+import {
+  CHANGE_THEME_REQUEST, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES, STORE_ASYNC_THEME,
+} from '../constants';
 
 
 describe('bootstrap-styled-saga actions', () => {
