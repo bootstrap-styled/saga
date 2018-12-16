@@ -1,7 +1,9 @@
 import { fromJS } from 'immutable';
 import theme from 'bootstrap-styled/lib/theme';
 import { initialState } from '../reducer';
-import { selectBsSaga, selectAsyncThemes, selectAsyncValues, selectGroupedThemes, selectGroupedValues } from '../selectors';
+import {
+  selectBsSaga, selectAsyncThemes, selectAsyncValues, selectGroupedThemes, selectGroupedValues,
+} from '../selectors';
 
 describe('selectBsSaga immutable', () => {
   let state;

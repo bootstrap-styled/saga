@@ -1,4 +1,6 @@
-import { CHANGE_THEME_REQUEST, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES, STORE_ASYNC_THEME } from './constants';
+import {
+  CHANGE_THEME_REQUEST, CHANGE_THEME_FAILURE, DELETE_ASYNC_THEMES, STORE_ASYNC_THEME,
+} from './constants';
 
 /**
  * trigger to use change async theme
