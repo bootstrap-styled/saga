@@ -1,3 +1,17 @@
+# [1.1.0](https://github.com/bootstrap-styled/saga/compare/v1.0.6...v1.1.0) (2018-11-23)
+
+
+### Bug Fixes
+
+* **immutable:** added immutable reducer and selectors ([1785513](https://github.com/bootstrap-styled/saga/commit/1785513))
+
+
+### Features
+
+* **immutable:** added immutable reducer and selectors ([ebcf421](https://github.com/bootstrap-styled/saga/commit/ebcf421))
+* **immutable:** added immutable reducer and selectors ([a82159e](https://github.com/bootstrap-styled/saga/commit/a82159e))
+* **immutable:** Added selectors and reducer for ImmutableJS ([764b17f](https://github.com/bootstrap-styled/saga/commit/764b17f))
+
 ## [1.0.6](https://github.com/bootstrap-styled/saga/compare/v1.0.5...v1.0.6) (2018-11-17)
 
 
