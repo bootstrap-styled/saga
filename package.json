@@ -189,7 +189,7 @@
     "react-redux": "^6.0.0",
     "react-styleguidist": "^8.0.6",
     "react-test-renderer": "^16.6.3",
-    "react-transition-group": "^2.5.1",
+    "react-transition-group": "^3.0.0",
     "redux": "^4.0.1",
     "redux-immutable": "^4.0.0",
     "redux-saga": "^0.16.2",
