@@ -175,7 +175,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
-    "eslint-plugin-redux-saga": "^0.10.0",
+    "eslint-plugin-redux-saga": "^1.1.0",
     "exports-loader": "^0.7.0",
     "immutable": "^4.0.0-rc.12",
     "istanbul-api": "^2.0.6",
