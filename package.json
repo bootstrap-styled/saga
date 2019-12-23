@@ -179,7 +179,7 @@
     "exports-loader": "^0.7.0",
     "immutable": "^4.0.0-rc.12",
     "istanbul-api": "^2.0.6",
-    "istanbul-reports": "^2.0.1",
+    "istanbul-reports": "^3.0.0",
     "jest-cli": "^23.6.0",
     "jest-sonar-reporter": "^2.0.0",
     "lint-staged": "^8.1.0",
