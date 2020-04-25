@@ -10,7 +10,7 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=coverage)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga) 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=com.github.bootstrap-styled.saga&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.github.bootstrap-styled.saga)
 [![gitter](https://badges.gitter.im/bootstrap-styled/bootstrap-styled.svg)](https://gitter.im/bootstrap-styled)
-[![Greenkeeper badge](https://badges.greenkeeper.io/bootstrap-styled/saga.svg)](https://greenkeeper.io/)
+
 
 Bootstrap Styled Saga help you pull themes from a server
 
